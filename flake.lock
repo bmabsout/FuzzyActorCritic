@@ -1,0 +1,91 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1642700792,
+        "narHash": "sha256-XqHrk7hFb+zBvRg6Ghl+AZDq03ov6OshJLiSWOoX5es=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "846b2ae0fc4cc943637d3d1def4454213e203cba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "mach-nix": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "pypi-deps-db": "pypi-deps-db"
+      },
+      "locked": {
+        "lastModified": 1681814846,
+        "narHash": "sha256-IMQ1Twf/ozE53CwrunXNlYD3D31xqgz/mZyZG38Ov/Y=",
+        "owner": "DavHau",
+        "repo": "mach-nix",
+        "rev": "8d903072c7b5426d90bc42a008242c76590af916",
+        "type": "github"
+      },
+      "original": {
+        "id": "mach-nix",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1643805626,
+        "narHash": "sha256-AXLDVMG+UaAGsGSpOtQHPIKB+IZ0KSd9WS77aanGzgc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "554d2d8aa25b6e583575459c297ec23750adb6cb",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-unstable",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1682566018,
+        "narHash": "sha256-HPzPRFiy2o/7k7mtnwfM1E6NVZHiFbPdmYCMoIpkHO4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "8e3b64db39f2aaa14b35ee5376bd6a2e707cadc2",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pypi-deps-db": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1678051695,
+        "narHash": "sha256-kFFP8TN8pEKARtjK9loGdH+TU23ZbHdVLCUdNcufKPs=",
+        "owner": "DavHau",
+        "repo": "pypi-deps-db",
+        "rev": "e00b22ead9d3534ba1c448e1af3076af6b234acf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DavHau",
+        "repo": "pypi-deps-db",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "mach-nix": "mach-nix",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
